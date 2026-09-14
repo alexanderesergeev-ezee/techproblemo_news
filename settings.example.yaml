@@ -1,0 +1,19 @@
+# Предлагаемые значения. Приложение пока не реализовано.
+mode: offline
+worker_interval_seconds: 600
+source_interval_seconds: 3600
+threshold: 0.70
+threshold_operator: gt
+first_fetch_backfill_hours: 24
+max_items_per_source_per_run: 100
+max_llm_calls_per_day: 200
+max_deliveries_per_day: 20
+max_delivery_age_hours: 48
+llm_max_retries: 2
+raw_retention_days: 90
+single_worker: true
+public_publication: false
+live_delivery_enabled: false
+llm_provider: mock
+llm_model: null
+prompt_version: classify_v1

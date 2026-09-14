@@ -1,0 +1,12 @@
+# Синтетика для offline. Это не реальный каталог Telegram-каналов.
+sources:
+  - id: synthetic_fixture
+    name: Synthetic cases (not real news)
+    type: fixture
+    locator: evals/synthetic_cases.jsonl
+    enabled: true
+    approval_state: approved
+    permission_ref: synthetic-created-for-this-project
+    llm_transfer_allowed: false  # offline-заглушка не передаёт данные наружу
+    retention_days: 90
+# Реальные источники добавляются отдельно после проверки доступа и прав.
