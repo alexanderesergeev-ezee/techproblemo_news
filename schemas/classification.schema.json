@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relevance_score", "category", "insufficient_context", "summary_ru", "reason_ru", "evidence"],
+  "properties": {
+    "relevance_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "category": {"enum": ["availability", "data_integrity", "change_release", "capacity_dependency", "ai_reliability", "security_operational", "not_relevant"]},
+    "insufficient_context": {"type": "boolean"},
+    "summary_ru": {"type": "string"},
+    "reason_ru": {"type": "string"},
+    "evidence": {"type": "array", "items": {"type": "string"}}
+  }
+}
